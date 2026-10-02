@@ -1,0 +1,132 @@
+:root {
+  --pink: #FF3D8A;
+  --ink: #26212B;
+  --ink-soft: #6B6572;
+  --bg: #FAF6F7;
+  --card: #FFFFFF;
+  --border: #F0E4E8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+header.site {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+header.site .mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--pink);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+header.site .name {
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+}
+
+h1 {
+  font-size: 26px;
+  margin: 0 0 6px;
+  letter-spacing: -0.3px;
+}
+
+.updated {
+  color: var(--ink-soft);
+  font-size: 13px;
+  margin: 0 0 32px;
+}
+
+section {
+  margin-bottom: 24px;
+}
+
+section h2 {
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+
+section p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 14.5px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: border-color 0.15s;
+}
+
+.card:hover { border-color: var(--pink); }
+
+.card h2 {
+  font-size: 17px;
+  margin: 0 0 4px;
+  color: var(--ink);
+}
+
+.card p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+a.back {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--pink);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+footer.site {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+footer.site a { color: var(--pink); text-decoration: none; }
+
+code.step {
+  background: #FAF6F7;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2px 8px;
+  font-size: 13px;
+  font-family: inherit;
+}
